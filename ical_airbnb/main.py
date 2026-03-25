@@ -161,10 +161,10 @@ def run_once(
             continue
 
         if dry_run:
-            logging.info("Dry run notification:\n%s", notification.content)
+            logging.info("Dry run notification:\n%s", notification.to_log_message())
         else:
             try:
-                send_discord_message(config.discord_webhook_url, notification.content)
+                send_discord_message(config.discord_webhook_url, notification)
             except Exception:
                 logging.exception(
                     "Failed to send %s notification", notification.kind
@@ -191,3 +191,6 @@ def _events_from_state(records: dict[str, dict[str, str]]) -> list[BookingEvent]
             logging.warning("Skipping malformed event in saved state")
     return events
 
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,7 +1,228 @@
 {
-  "version": 1,
-  "meta": {},
-  "calendars": {},
-  "notifications": {}
+  "calendars": {
+    "anns_cottage:airbnb": {
+      "calendar_id": "airbnb",
+      "etag": null,
+      "events": {
+        "1418fb94e984-196abe3d54711c17aa0a3a8bae4b9e26@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-13",
+          "fingerprint": "8f42de3b2a7f0e29c9ee2274b1d77ed031acd5e2",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-08",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-196abe3d54711c17aa0a3a8bae4b9e26@airbnb.com"
+        },
+        "1418fb94e984-1d4a075d0a28ccf113a3efb7050041a0@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-03-27",
+          "fingerprint": "57df71b21412b97b160471208ffc0d1f5084f87f",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-03-23",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-1d4a075d0a28ccf113a3efb7050041a0@airbnb.com"
+        },
+        "1418fb94e984-e047af2c006aeef26798ce5fbfa4c55e@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-07",
+          "fingerprint": "b2b746307fc82832d12beb72df46e8f5deea67a9",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-02",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-e047af2c006aeef26798ce5fbfa4c55e@airbnb.com"
+        },
+        "1418fb94e984-fc281bf48582226b1be613f04da69a00@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-26",
+          "fingerprint": "5bd1ece5cc5f24de7d99d72c9910e6e503538c3c",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-21",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-fc281bf48582226b1be613f04da69a00@airbnb.com"
+        },
+        "7f662ec65913-6838d1d2aa57d859f8554604da9c8078@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-02",
+          "fingerprint": "198ac541cdcfc2ee4c58879b0f602920c39945a7",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-01",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-6838d1d2aa57d859f8554604da9c8078@airbnb.com"
+        },
+        "7f662ec65913-6d4211134cc1281cbaf8634d9430b9e3@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-08",
+          "fingerprint": "70d5ab8c7a7b3255a28e9f2aa1bcce962e981889",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-07",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-6d4211134cc1281cbaf8634d9430b9e3@airbnb.com"
+        },
+        "7f662ec65913-864ef4a05b4ef27cf77c9e97a51ae546@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-14",
+          "fingerprint": "c7cd87c943d4d9701677edf0668b4bfc4d39a3b2",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-13",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-864ef4a05b4ef27cf77c9e97a51ae546@airbnb.com"
+        },
+        "7f662ec65913-a66f1061c79ab134238d8425b8fb6116@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-27",
+          "fingerprint": "83a10d3bf74faae4cee10414030eb9ecb1b4135f",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-26",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-a66f1061c79ab134238d8425b8fb6116@airbnb.com"
+        },
+        "7f662ec65913-baf0978f899708b7dd52e5423a776d7a@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-03-28",
+          "fingerprint": "627a11cd1aa17db47bcc8f1ca6f002268d3825f1",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-03-27",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-baf0978f899708b7dd52e5423a776d7a@airbnb.com"
+        },
+        "7f662ec65913-ce6cb052b6f4acb80240a29c1fdf8178@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-04-21",
+          "fingerprint": "3898c7d0d29a0b8cf67546c52f903faba685e451",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-04-20",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-ce6cb052b6f4acb80240a29c1fdf8178@airbnb.com"
+        },
+        "7f662ec65913-cee6bc9e5aa64c5bf259e238f0a9805e@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2027-01-04",
+          "fingerprint": "d5a6acbd3ddd6a5a126cc68988e5050db4a5cf40",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-12-21",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-cee6bc9e5aa64c5bf259e238f0a9805e@airbnb.com"
+        },
+        "7f662ec65913-d4eb05736aa59e4b94a4e2807c9960b5@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2027-03-26",
+          "fingerprint": "79921dcf2109180bf12fa266b54402e845b76f8b",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2027-01-04",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-d4eb05736aa59e4b94a4e2807c9960b5@airbnb.com"
+        },
+        "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-12-21",
+          "fingerprint": "60d09ce58befebc45112a53a2a86693549bb8a16",
+          "property_id": "anns_cottage",
+          "property_name": "Ann's Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-09-01",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
+        }
+      },
+      "last_checked_at": "2026-03-25T03:52:06+00:00",
+      "last_modified": null,
+      "property_id": "anns_cottage",
+      "source": "airbnb"
+    }
+  },
+  "meta": {
+    "last_run_at": "2026-03-25T03:52:06+00:00"
+  },
+  "notifications": {
+    "1847bd519c4c7fcd11f4181173b822bdd5754a1a": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "316473e2a422ee96b53e6cf1d8801cbf623da19e": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "559bd6d6f44b6346e4b3d6d1872dcc0362bbc3b0": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "66c204062006c22d149244e05101242a2864ea22": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "6887beadd7737d8a7bd10e2778f4db6018f1a81c": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "9d3640f7485ef2f5f12436f400c0aab1c89c9d8b": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "c91c033965afd2b7219d0f4508fd31a9b0caf007": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "ca59962a75e06b1bad9897a841d53572930fa32c": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "d0997a3991d834a686255f624d083b251b397b06": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "d66256bd2ecc875797c47aaf122afb151b1a4d8b": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "ef4542f382fb80fa4b96d78f8be972e9f3bf54b1": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "f136ab1c2aa10ac3959311de0da3fa694bec2ee5": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    },
+    "f3b84a3b46b37ac4eabe58a17d96e077deca7562": {
+      "kind": "new",
+      "sent_at": "2026-03-25T03:52:06+00:00"
+    }
+  },
+  "version": 1
 }
-

@@ -268,7 +268,7 @@ Example:
 ```bash
 export DISCORD_WEBHOOK_URL="<your webhook>"
 export ANNS_COTTAGE_ICAL="<your ann's cottage airbnb ical url>"
-.venv/bin/python -m ical_airbnb.main --config config.example.json --state-file data/state.json --dry-run
+.venv/bin/python -m ical_airbnb --config config.example.json --state-file data/state.json --dry-run
 ```
 
 Use `--dry-run` first so it prints detections without sending Discord messages.

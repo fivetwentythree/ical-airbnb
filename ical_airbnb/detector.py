@@ -9,10 +9,25 @@ from .models import BookingEvent
 
 
 @dataclass(frozen=True)
+class NotificationField:
+    name: str
+    value: str
+    inline: bool = True
+
+
+@dataclass(frozen=True)
 class NotificationCandidate:
     dedupe_key: str
     kind: str
-    content: str
+    title: str
+    fields: tuple[NotificationField, ...]
+    color: int
+
+    def to_log_message(self) -> str:
+        lines = [self.title]
+        for field in self.fields:
+            lines.append(f"{field.name}: {field.value}")
+        return "\n".join(lines)
 
 
 def calendar_state_key(property_id: str, calendar_id: str) -> str:
@@ -50,7 +65,9 @@ def diff_events(
                 NotificationCandidate(
                     dedupe_key=_dedupe_key("new", event),
                     kind="new",
-                    content=_format_new_booking(event),
+                    title="New booking",
+                    fields=_new_booking_fields(event),
+                    color=0x57F287,
                 )
             )
             continue
@@ -60,7 +77,9 @@ def diff_events(
                 NotificationCandidate(
                     dedupe_key=_dedupe_key("updated", event),
                     kind="updated",
-                    content=_format_updated_booking(previous, event),
+                    title="Updated booking",
+                    fields=_updated_booking_fields(previous, event),
+                    color=0x5865F2,
                 )
             )
 
@@ -73,7 +92,9 @@ def diff_events(
             NotificationCandidate(
                 dedupe_key=_dedupe_key("cancelled", event),
                 kind="cancelled",
-                content=_format_cancelled_booking(event),
+                title="Booking removed or cancelled",
+                fields=_cancelled_booking_fields(event),
+                color=0xED4245,
             )
         )
 
@@ -108,7 +129,9 @@ def detect_overlaps(
                     NotificationCandidate(
                         dedupe_key=_overlap_key(left, right),
                         kind="overlap",
-                        content=_format_overlap(left, right),
+                        title="Possible double booking detected",
+                        fields=_overlap_fields(left, right),
+                        color=0xFAA61A,
                     )
                 )
 
@@ -142,55 +165,60 @@ def _overlap_key(left: BookingEvent, right: BookingEvent) -> str:
     return hashlib.sha1("|".join(seed_parts).encode("utf-8")).hexdigest()
 
 
-def _format_new_booking(event: BookingEvent) -> str:
-    lines = [
-        "New booking",
-        f"Property: {event.property_name}",
-        f"Source: {_label(event.source)}",
-        f"Check-in: {event.start_date}",
-        f"Check-out: {event.end_date}",
+def _new_booking_fields(event: BookingEvent) -> tuple[NotificationField, ...]:
+    fields = [
+        NotificationField("Property", event.property_name),
+        NotificationField("Source", _label(event.source)),
+        NotificationField("Check-in", event.start_date),
+        NotificationField("Check-out", event.end_date),
     ]
     if event.summary:
-        lines.append(f"Summary: {event.summary}")
-    return "\n".join(lines)
+        fields.append(NotificationField("Summary", event.summary, inline=False))
+    return tuple(fields)
 
 
-def _format_updated_booking(previous: BookingEvent, current: BookingEvent) -> str:
-    lines = [
-        "Updated booking",
-        f"Property: {current.property_name}",
-        f"Source: {_label(current.source)}",
-        f"Old dates: {previous.start_date} -> {previous.end_date}",
-        f"New dates: {current.start_date} -> {current.end_date}",
+def _updated_booking_fields(
+    previous: BookingEvent, current: BookingEvent
+) -> tuple[NotificationField, ...]:
+    fields = [
+        NotificationField("Property", current.property_name),
+        NotificationField("Source", _label(current.source)),
+        NotificationField(
+            "Old dates", f"{previous.start_date} -> {previous.end_date}", inline=False
+        ),
+        NotificationField(
+            "New dates", f"{current.start_date} -> {current.end_date}", inline=False
+        ),
     ]
     if current.summary:
-        lines.append(f"Summary: {current.summary}")
-    return "\n".join(lines)
+        fields.append(NotificationField("Summary", current.summary, inline=False))
+    return tuple(fields)
 
 
-def _format_cancelled_booking(event: BookingEvent) -> str:
-    lines = [
-        "Booking removed or cancelled",
-        f"Property: {event.property_name}",
-        f"Source: {_label(event.source)}",
-        f"Dates: {event.start_date} -> {event.end_date}",
+def _cancelled_booking_fields(event: BookingEvent) -> tuple[NotificationField, ...]:
+    fields = [
+        NotificationField("Property", event.property_name),
+        NotificationField("Source", _label(event.source)),
+        NotificationField("Dates", f"{event.start_date} -> {event.end_date}", inline=False),
     ]
     if event.summary:
-        lines.append(f"Summary: {event.summary}")
-    return "\n".join(lines)
+        fields.append(NotificationField("Summary", event.summary, inline=False))
+    return tuple(fields)
 
 
-def _format_overlap(left: BookingEvent, right: BookingEvent) -> str:
-    return "\n".join(
-        [
-            "Possible double booking detected",
-            f"Property: {left.property_name}",
-            f"{_label(left.source)}: {left.start_date} -> {left.end_date}",
-            f"{_label(right.source)}: {right.start_date} -> {right.end_date}",
-        ]
+def _overlap_fields(
+    left: BookingEvent, right: BookingEvent
+) -> tuple[NotificationField, ...]:
+    return (
+        NotificationField("Property", left.property_name),
+        NotificationField(
+            _label(left.source), f"{left.start_date} -> {left.end_date}", inline=False
+        ),
+        NotificationField(
+            _label(right.source), f"{right.start_date} -> {right.end_date}", inline=False
+        ),
     )
 
 
 def _label(value: str) -> str:
     return value.replace("_", " ").title()
-
