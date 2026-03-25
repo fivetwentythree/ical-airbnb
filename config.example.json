@@ -1,0 +1,19 @@
+{
+  "discord_webhook_url": "env:DISCORD_WEBHOOK_URL",
+  "poll_interval_seconds": 300,
+  "properties": [
+    {
+      "id": "main-apartment",
+      "name": "Main Apartment",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:AIRBNB_MAIN_ICAL"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,10 @@
+[project]
+name = "ical-airbnb"
+version = "0.1.0"
+description = "Free GitHub Actions iCal booking monitor for Discord"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false
+

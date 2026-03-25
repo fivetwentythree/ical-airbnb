@@ -1,0 +1,51 @@
+name: Poll calendars
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ical-airbnb-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Sync project
+        run: uv sync --frozen
+
+      - name: Poll calendars
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          AIRBNB_MAIN_ICAL: ${{ secrets.AIRBNB_MAIN_ICAL }}
+        run: uv run python -m ical_airbnb.main --config config.example.json --state-file data/state.json
+
+      - name: Commit updated state
+        run: |
+          if git diff --quiet -- data/state.json; then
+            echo "No state changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          git commit -m "Update booking state [skip ci]"
+          git push
