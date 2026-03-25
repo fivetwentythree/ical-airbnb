@@ -3,17 +3,106 @@
   "poll_interval_seconds": 300,
   "properties": [
     {
-      "id": "main-apartment",
-      "name": "Main Apartment",
+      "id": "anns_cottage",
+      "name": "Ann's Cottage",
       "timezone": "Australia/Hobart",
       "feeds": [
         {
           "id": "airbnb",
           "source": "airbnb",
           "url": "env:AIRBNB_MAIN_ICAL"
+        },
+        {
+          "id": "booking",
+          "source": "booking_com",
+          "url": "env:ANNS_COTTAGE_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "farm_house",
+      "name": "Farm House",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:FARM_HOUSE_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "hill_st",
+      "name": "Hill St",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:HILL_ST_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "manning",
+      "name": "Mannnig",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:MANNING_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "melville",
+      "name": "Melville",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:MELVILLE_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "penthouse",
+      "name": "Penthouse",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:PENTHOUSE_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "warwick",
+      "name": "Warwick",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:WARWICK_ICAL"
+        }
+      ]
+    },
+    {
+      "id": "whiskey",
+      "name": "Whiskey Cottage",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:WHISKEY_ICAL"
         }
       ]
     }
+
   ]
 }
-

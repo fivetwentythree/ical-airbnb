@@ -34,7 +34,15 @@ jobs:
       - name: Poll calendars
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          AIRBNB_MAIN_ICAL: ${{ secrets.AIRBNB_MAIN_ICAL }}
+          ANNS_COTTAGE_ICAL: ${{ secrets.ANNS_COTTAGE_ICAL }}
+          FARM_HOUSE_ICAL: ${{ secrets.FARM_HOUSE_ICAL }}
+          HILL_ST_ICAL: ${{ secrets.HILL_ST_ICAL }}
+          MANNING_ICAL: ${{ secrets.MANNING_ICAL }}
+          MELVILLE_ICAL: ${{ secrets.MELVILLE_ICAL }}
+          PENTHOUSE_ICAL: ${{ secrets.PENTHOUSE_ICAL }}
+          WARWICK_ICAL: ${{ secrets.WARWICK_ICAL }}
+          WHISKEY_ICAL: ${{ secrets.WHISKEY_ICAL }}
+
         run: uv run python -m ical_airbnb.main --config config.example.json --state-file data/state.json
 
       - name: Commit updated state
