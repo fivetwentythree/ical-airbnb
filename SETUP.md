@@ -52,10 +52,9 @@ If you use multiple platforms, collect those too.
 
 Suggested secret naming pattern:
 
-- `AIRBNB_MAIN_ICAL`
-- `AIRBNB_BEACH_ICAL`
-- `BOOKING_MAIN_ICAL`
-- `VRBO_MAIN_ICAL`
+- `ANNS_COTTAGE_ICAL`
+- `FARM_HOUSE_ICAL`
+- `WHISKEY_ICAL`
 
 ## Step 3: Initialize this folder as a Git repository
 
@@ -106,16 +105,15 @@ In your GitHub repo:
 Minimum required secrets:
 
 - `DISCORD_WEBHOOK_URL`
-- `AIRBNB_MAIN_ICAL`
+- one iCal secret for each feed you configure
 
 If you have more properties or platforms, add one secret for each feed URL.
 
 Example secret list for two properties:
 
 - `DISCORD_WEBHOOK_URL`
-- `AIRBNB_MAIN_ICAL`
-- `BOOKING_MAIN_ICAL`
-- `AIRBNB_BEACH_ICAL`
+- `ANNS_COTTAGE_ICAL`
+- `FARM_HOUSE_ICAL`
 
 ## Step 6: Configure your properties and feeds
 
@@ -143,7 +141,7 @@ Note:
         {
           "id": "airbnb",
           "source": "airbnb",
-          "url": "env:AIRBNB_MAIN_ICAL"
+          "url": "env:ANNS_COTTAGE_ICAL"
         }
       ]
     }
@@ -166,24 +164,19 @@ Note:
         {
           "id": "airbnb",
           "source": "airbnb",
-          "url": "env:AIRBNB_MAIN_ICAL"
-        },
-        {
-          "id": "booking",
-          "source": "booking_com",
-          "url": "env:BOOKING_MAIN_ICAL"
+          "url": "env:ANNS_COTTAGE_ICAL"
         }
       ]
     },
     {
-      "id": "beach-house",
-      "name": "Beach House",
+      "id": "farm-house",
+      "name": "Farm House",
       "timezone": "Australia/Hobart",
       "feeds": [
         {
           "id": "airbnb",
           "source": "airbnb",
-          "url": "env:AIRBNB_BEACH_ICAL"
+          "url": "env:FARM_HOUSE_ICAL"
         }
       ]
     }
@@ -202,7 +195,7 @@ In the `Poll calendars` step, add every secret you referenced in `config.example
 ```yaml
 env:
   DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-  AIRBNB_MAIN_ICAL: ${{ secrets.AIRBNB_MAIN_ICAL }}
+  ANNS_COTTAGE_ICAL: ${{ secrets.ANNS_COTTAGE_ICAL }}
 ```
 
 ### Expanded env block for multiple properties
@@ -210,9 +203,8 @@ env:
 ```yaml
 env:
   DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-  AIRBNB_MAIN_ICAL: ${{ secrets.AIRBNB_MAIN_ICAL }}
-  BOOKING_MAIN_ICAL: ${{ secrets.BOOKING_MAIN_ICAL }}
-  AIRBNB_BEACH_ICAL: ${{ secrets.AIRBNB_BEACH_ICAL }}
+  ANNS_COTTAGE_ICAL: ${{ secrets.ANNS_COTTAGE_ICAL }}
+  FARM_HOUSE_ICAL: ${{ secrets.FARM_HOUSE_ICAL }}
 ```
 
 Important:
@@ -275,7 +267,7 @@ Example:
 
 ```bash
 export DISCORD_WEBHOOK_URL="<your webhook>"
-export AIRBNB_MAIN_ICAL="<your airbnb ical url>"
+export ANNS_COTTAGE_ICAL="<your ann's cottage airbnb ical url>"
 .venv/bin/python -m ical_airbnb.main --config config.example.json --state-file data/state.json --dry-run
 ```
 
@@ -337,12 +329,12 @@ Example:
     {
       "id": "airbnb",
       "source": "airbnb",
-      "url": "env:AIRBNB_MAIN_ICAL"
+      "url": "env:MAIN_APARTMENT_AIRBNB_ICAL"
     },
     {
       "id": "booking",
       "source": "booking_com",
-      "url": "env:BOOKING_MAIN_ICAL"
+      "url": "env:MAIN_APARTMENT_BOOKING_ICAL"
     }
   ]
 }

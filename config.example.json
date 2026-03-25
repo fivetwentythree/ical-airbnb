@@ -10,11 +10,6 @@
         {
           "id": "airbnb",
           "source": "airbnb",
-          "url": "env:AIRBNB_MAIN_ICAL"
-        },
-        {
-          "id": "booking",
-          "source": "booking_com",
           "url": "env:ANNS_COTTAGE_ICAL"
         }
       ]
@@ -45,7 +40,7 @@
     },
     {
       "id": "manning",
-      "name": "Mannnig",
+      "name": "Manning",
       "timezone": "Australia/Hobart",
       "feeds": [
         {

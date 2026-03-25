@@ -123,7 +123,7 @@ Example shape:
         {
           "id": "airbnb",
           "source": "airbnb",
-          "url": "env:AIRBNB_MAIN_ICAL"
+          "url": "env:MAIN_APARTMENT_AIRBNB_ICAL"
         }
       ]
     }
@@ -210,7 +210,7 @@ The workflow is intentionally simple because the free version should be easy to 
 At minimum:
 
 - `DISCORD_WEBHOOK_URL`
-- `AIRBNB_MAIN_ICAL`
+- one iCal secret per property feed, for example `ANNS_COTTAGE_ICAL`
 
 If you add more properties or more feeds, add more secrets and update the config file to reference them.
 
