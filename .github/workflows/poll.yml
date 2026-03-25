@@ -42,6 +42,7 @@ jobs:
           PENTHOUSE_ICAL: ${{ secrets.PENTHOUSE_ICAL }}
           WARWICK_ICAL: ${{ secrets.WARWICK_ICAL }}
           WHISKEY_ICAL: ${{ secrets.WHISKEY_ICAL }}
+          THOM_ICAL: ${{ secrets.THOM_ICAL }}
 
         run: uv run python -m ical_airbnb --config config.example.json --state-file data/state.json
 

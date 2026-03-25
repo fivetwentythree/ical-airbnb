@@ -87,6 +87,18 @@
       ]
     },
     {
+      "id": "thom",
+      "name": "Thom",
+      "timezone": "Australia/Hobart",
+      "feeds": [
+        {
+          "id": "airbnb",
+          "source": "airbnb",
+          "url": "env:THOM_ICAL"
+        }
+      ]
+    },
+    {
       "id": "whiskey",
       "name": "Whiskey Cottage",
       "timezone": "Australia/Hobart",
