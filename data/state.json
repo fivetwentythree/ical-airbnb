@@ -149,7 +149,7 @@
           "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "anns_cottage",
       "source": "airbnb"
@@ -447,7 +447,7 @@
           "uid": "7f662ec65913-fdb725229d7e407304c791030ea45095@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "farm_house",
       "source": "airbnb"
@@ -649,7 +649,7 @@
           "uid": "7f662ec65913-f111472708409b2ae9d74ab9d6c63a17@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "hill_st",
       "source": "airbnb"
@@ -671,7 +671,7 @@
           "uid": "7f662ec65913-cbd0c61e058ad3ef6dfec4372c61a670@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "manning",
       "source": "airbnb"
@@ -715,6 +715,18 @@
           "start_date": "2026-04-03",
           "summary": "Reserved",
           "uid": "1418fb94e984-3a28ab79bdb900fd3ba0cb1a9cc0f4a6@airbnb.com"
+        },
+        "1418fb94e984-588779e0603f77e4457e1288267ced65@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-06",
+          "fingerprint": "77cb0ba899d61ad9a39cba17828e8beff1c6c37c",
+          "property_id": "melville",
+          "property_name": "Melville",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-03",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-588779e0603f77e4457e1288267ced65@airbnb.com"
         },
         "1418fb94e984-7760ad63277a79f377d087e3bc7be107@airbnb.com": {
           "calendar_id": "airbnb",
@@ -932,6 +944,18 @@
           "summary": "Airbnb (Not available)",
           "uid": "7f662ec65913-baf0978f899708b7dd52e5423a776d7a@airbnb.com"
         },
+        "7f662ec65913-bbf048b8fc2bd7f916c53b719821629a@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-03",
+          "fingerprint": "2908caacc9adb8f84f1a5a5df6650f80e66defeb",
+          "property_id": "melville",
+          "property_name": "Melville",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-02",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-bbf048b8fc2bd7f916c53b719821629a@airbnb.com"
+        },
         "7f662ec65913-d67425239ed6643d14af63ec25f4bf3b@airbnb.com": {
           "calendar_id": "airbnb",
           "end_date": "2026-04-10",
@@ -968,6 +992,18 @@
           "summary": "Airbnb (Not available)",
           "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
         },
+        "7f662ec65913-f0110cad5f9c9cb25d35c73a5c36c27c@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-07",
+          "fingerprint": "4c5aa80dea399f0257906d2b1eec91bff5ff320e",
+          "property_id": "melville",
+          "property_name": "Melville",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-06",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-f0110cad5f9c9cb25d35c73a5c36c27c@airbnb.com"
+        },
         "7f662ec65913-f111472708409b2ae9d74ab9d6c63a17@airbnb.com": {
           "calendar_id": "airbnb",
           "end_date": "2026-06-11",
@@ -993,7 +1029,7 @@
           "uid": "7f662ec65913-fdb725229d7e407304c791030ea45095@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "melville",
       "source": "airbnb"
@@ -1231,7 +1267,7 @@
           "uid": "7f662ec65913-fbfcb435c0af1cf3b9e6b3ea057d72f0@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "penthouse",
       "source": "airbnb"
@@ -1625,7 +1661,7 @@
           "uid": "7f662ec65913-db22407c8b91f445505381b7614efd86@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "thom",
       "source": "airbnb"
@@ -1743,7 +1779,7 @@
           "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "warwick",
       "source": "airbnb"
@@ -1787,6 +1823,18 @@
           "start_date": "2026-04-03",
           "summary": "Reserved",
           "uid": "1418fb94e984-3a28ab79bdb900fd3ba0cb1a9cc0f4a6@airbnb.com"
+        },
+        "1418fb94e984-588779e0603f77e4457e1288267ced65@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-06",
+          "fingerprint": "32df852d70301a50f1c1be0398989634a727bf43",
+          "property_id": "whiskey",
+          "property_name": "Whiskey Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-03",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-588779e0603f77e4457e1288267ced65@airbnb.com"
         },
         "1418fb94e984-7760ad63277a79f377d087e3bc7be107@airbnb.com": {
           "calendar_id": "airbnb",
@@ -2004,6 +2052,18 @@
           "summary": "Airbnb (Not available)",
           "uid": "7f662ec65913-baf0978f899708b7dd52e5423a776d7a@airbnb.com"
         },
+        "7f662ec65913-bbf048b8fc2bd7f916c53b719821629a@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-03",
+          "fingerprint": "fb010aba39d17e2e61fc027f6846f6cbc909a7c6",
+          "property_id": "whiskey",
+          "property_name": "Whiskey Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-02",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-bbf048b8fc2bd7f916c53b719821629a@airbnb.com"
+        },
         "7f662ec65913-d67425239ed6643d14af63ec25f4bf3b@airbnb.com": {
           "calendar_id": "airbnb",
           "end_date": "2026-04-10",
@@ -2040,6 +2100,18 @@
           "summary": "Airbnb (Not available)",
           "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
         },
+        "7f662ec65913-f0110cad5f9c9cb25d35c73a5c36c27c@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-07",
+          "fingerprint": "c1ee37439f121df751b07275e8cea459b849ffd2",
+          "property_id": "whiskey",
+          "property_name": "Whiskey Cottage",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-06",
+          "summary": "Airbnb (Not available)",
+          "uid": "7f662ec65913-f0110cad5f9c9cb25d35c73a5c36c27c@airbnb.com"
+        },
         "7f662ec65913-f111472708409b2ae9d74ab9d6c63a17@airbnb.com": {
           "calendar_id": "airbnb",
           "end_date": "2026-06-11",
@@ -2065,14 +2137,14 @@
           "uid": "7f662ec65913-fdb725229d7e407304c791030ea45095@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T03:13:46+00:00",
+      "last_checked_at": "2026-03-28T05:05:03+00:00",
       "last_modified": null,
       "property_id": "whiskey",
       "source": "airbnb"
     }
   },
   "meta": {
-    "last_run_at": "2026-03-28T03:13:46+00:00"
+    "last_run_at": "2026-03-28T05:05:03+00:00"
   },
   "notifications": {
     "1847bd519c4c7fcd11f4181173b822bdd5754a1a": {
