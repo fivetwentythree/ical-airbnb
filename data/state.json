@@ -149,7 +149,7 @@
           "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "anns_cottage",
       "source": "airbnb"
@@ -447,7 +447,7 @@
           "uid": "7f662ec65913-fdb725229d7e407304c791030ea45095@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "farm_house",
       "source": "airbnb"
@@ -649,7 +649,7 @@
           "uid": "7f662ec65913-f111472708409b2ae9d74ab9d6c63a17@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "hill_st",
       "source": "airbnb"
@@ -671,7 +671,7 @@
           "uid": "7f662ec65913-cbd0c61e058ad3ef6dfec4372c61a670@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "manning",
       "source": "airbnb"
@@ -993,7 +993,7 @@
           "uid": "7f662ec65913-fdb725229d7e407304c791030ea45095@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "melville",
       "source": "airbnb"
@@ -1231,7 +1231,7 @@
           "uid": "7f662ec65913-fbfcb435c0af1cf3b9e6b3ea057d72f0@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "penthouse",
       "source": "airbnb"
@@ -1625,7 +1625,7 @@
           "uid": "7f662ec65913-db22407c8b91f445505381b7614efd86@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "thom",
       "source": "airbnb"
@@ -1682,6 +1682,18 @@
           "summary": "Reserved",
           "uid": "1418fb94e984-96c5ce9ff2ade118834d22e3ba22c5d5@airbnb.com"
         },
+        "1418fb94e984-a230e66bdb36a336ab52b64be6abe16e@airbnb.com": {
+          "calendar_id": "airbnb",
+          "end_date": "2026-06-08",
+          "fingerprint": "ce5c34b0e4113bc3de4650e486868b61611c5472",
+          "property_id": "warwick",
+          "property_name": "Warwick",
+          "property_timezone": "Australia/Hobart",
+          "source": "airbnb",
+          "start_date": "2026-06-06",
+          "summary": "Reserved",
+          "uid": "1418fb94e984-a230e66bdb36a336ab52b64be6abe16e@airbnb.com"
+        },
         "1418fb94e984-b7e5b63c07e19b5da26b199be89bfb61@airbnb.com": {
           "calendar_id": "airbnb",
           "end_date": "2026-05-14",
@@ -1731,7 +1743,7 @@
           "uid": "7f662ec65913-e12f91207641dae2e988d6c43d4cfd17@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "warwick",
       "source": "airbnb"
@@ -2053,14 +2065,14 @@
           "uid": "7f662ec65913-fdb725229d7e407304c791030ea45095@airbnb.com"
         }
       },
-      "last_checked_at": "2026-03-28T00:03:17+00:00",
+      "last_checked_at": "2026-03-28T03:13:46+00:00",
       "last_modified": null,
       "property_id": "whiskey",
       "source": "airbnb"
     }
   },
   "meta": {
-    "last_run_at": "2026-03-28T00:03:17+00:00"
+    "last_run_at": "2026-03-28T03:13:46+00:00"
   },
   "notifications": {
     "1847bd519c4c7fcd11f4181173b822bdd5754a1a": {
